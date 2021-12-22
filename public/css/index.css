@@ -402,6 +402,14 @@ section#home-banner {
         margin: 15px;
     }
 
+    .card .container {
+        height: 400px;
+    }
+
+    .title-description {
+        font-size: 0.8rem;
+    }
+
 }
 
 

@@ -7,5 +7,11 @@ use Illuminate\Http\Request;
 
 class CenterController extends Controller
 {
-    //
+    /**
+     * @return \Illuminate\View\View
+     */
+    public function index()
+    {
+        return view('frontend.center');
+    }
 }

@@ -22,7 +22,7 @@
                     <img src="{{ url('img/frontend/home/Hero.png') }}" alt="first-banner">
                     <div class="banner-txt-wrapper">
                     <h1>AATAAPI</h1>
-                    <h4 style="font-weight:300;">Center for Mindfulness & Relaxation</h4>
+                    <h4 class="title-description" style="font-weight:300;">Center for Mindfulness & Relaxation</h4>
                     </div>
                     <div class="logo-wrapper">
                         <img class="logo" src="{{ url('img/frontend/logo.png') }}" alt="logo">
@@ -51,10 +51,10 @@
 </div> 
 <!-- end of container fluid -->
 
-<div class="container-fluid below-banner-all">
+<div class="container-fluid below-banner-all full-width-container-fluid">
 <a class="donate-link" href="#" data-toggle="modal" data-target="#donate">
     <img class="sonar-wave" width="80px" src="{{ url('img/frontend/donate-logo.png') }}" alt="donate logo">
-    <div style="width:80px; height:80px; background:#FFCC00;border-radius:50%; position: absolute; top: 30px; right: 15px;z-index:-1" class="round-shape"></div>
+    <div style="width:80px; height:80px; background:#FFCC00;border-radius:50%; position: absolute; top: 30px; right: 30px;z-index:-1" class="round-shape"></div>
 </a>
 
 
