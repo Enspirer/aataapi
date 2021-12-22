@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="">
+                <a class="{{ Request::segment(1) == null ? 'active' : null }}" href="{{ route('frontend.index') }}" >
                     Home
                 </a> 
             </li>

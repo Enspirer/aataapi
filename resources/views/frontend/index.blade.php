@@ -5,19 +5,48 @@
 @push('after-styles')
     <link rel="stylesheet" href="{{ url('css/index.css') }}">
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 @endpush
 
 
 @section('content')
 
 <section id="home-banner">
-    <div class="banner-txt-wrapper">
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="{{ url('img/frontend/home/Hero.png') }}" alt="first-banner">
+                    <div class="banner-txt-wrapper">
+                    <h1>AATAAPI</h1>
+                    <h4 style="font-weight:300;">Center for Mindfulness & Relaxation</h4>
+                    </div>
+                    <div class="logo-wrapper">
+                        <img class="logo" src="{{ url('img/frontend/logo.png') }}" alt="logo">
+                    </div>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    <!-- <div class="banner-txt-wrapper">
         <h1>AATAAPI</h1>
         <h4 style="font-weight:300;">Center for Mindfulness & Relaxation</h4>
     </div>
     <div class="logo-wrapper">
         <img class="logo" src="{{ url('img/frontend/logo.png') }}" alt="logo">
-    </div>
+    </div> -->
 </section>
 </div> 
 <!-- end of container fluid -->
@@ -34,7 +63,7 @@
     <div class="container">
         <!-- desktop design -->
         <div class="inner-container-home-first hidden-xs">
-            <img class="home-first-img col-xs-12" src="{{ url('img/frontend/home/home-first.png') }}" alt="">
+            <img class="home-first-img col-xs-12" src="{{ url('img/frontend/home/home-first.png') }}" alt=""> 
             <div class="home-first-card col-xs-12">
                 <h2 class="light-title"><span class="small-title">About the </span>Center</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -188,3 +217,20 @@
 </section>
 </div>
 @endsection
+
+@push('after-scripts')
+     <!-- Swiper JS -->
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+@endpush
+
