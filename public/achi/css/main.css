@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Variables ---------- */
+/* ---------- Section About ---------- */
+.section-about {
+  color: #212529;
+  text-align: justify;
+  font-size: 16px;
+  margin: 30px 0;
+}
+.section-about .about-title span {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 50px;
+  color: #662e0a;
+  font-weight: 300;
+}
+.section-about .about-title span:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #ffcc00;
+  margin: auto 0 auto 20px;
+}
+.section-about img {
+  width: 100%;
+}
+
+/* ---------- Section Message ---------- */
+.section-message {
+  color: #212529;
+  text-align: justify;
+  font-size: 16px;
+  margin: 60px 0;
+}
+.section-message img {
+  width: 100%;
+}
+.section-message .message-title {
+  font-size: 50px;
+  color: #662e0a;
+  font-weight: 300;
+}
+.section-message p {
+  margin-bottom: 30px;
+}
+.section-message .blockquote {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* ---------- Section Map ---------- */
+.section-map {
+  color: #212529;
+  text-align: justify;
+  font-size: 16px;
+  margin: 30px 0;
+}
+.section-map .contact-title span {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  font-size: 50px;
+  color: #662e0a;
+  font-weight: 300;
+}
+.section-map .contact-title span:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #ffcc00;
+  margin: auto 0 auto 20px;
+}
+.section-map .map {
+  filter: grayscale(100%);
+}
+
+/* ---------- Section Form ---------- */
+.section-form .text-block {
+  position: relative;
+}
+.section-form .text-block h2 {
+  text-align: center;
+}
+.section-form .text-block ol {
+  position: absolute;
+  left: 10%;
+}
+.section-form .contact-form {
+  margin-top: 120px;
+}
+.section-form .contact-form label:not(.form-check-label) {
+  opacity: 0.75;
+}
+.section-form .contact-form input:not(input[type=checkbox]) {
+  border: none;
+  border-bottom: 1px solid #212529;
+  border-radius: 0;
+}
+.section-form .contact-form input:not(input[type=checkbox]):focus {
+  box-shadow: none;
+}
+.section-form .contact-form input[type=checkbox] {
+  border: 1px solid #662e0a;
+  border-radius: 0;
+  box-shadow: none;
+}
+.section-form .contact-form input[type=checkbox]::after {
+  content: "Consent";
+  position: relative;
+  top: -35px;
+}
+.section-form .contact-form input[type=checkbox]:checked {
+  background-color: #ffcc00;
+  color: #662e0a;
+  border: 1px solid #662e0a;
+  border-radius: 0;
+}
+.section-form .contact-form textarea {
+  border: none;
+  border-radius: 0;
+  resize: none;
+  background-attachment: local;
+  background-image: linear-gradient(to right, white 10px, transparent 10px), linear-gradient(to left, white 10px, transparent 10px), repeating-linear-gradient(white, white 30px, #212529 30px, #212529 31px, white 31px);
+  line-height: 31px;
+  padding: 8px 10px;
+}
+.section-form .contact-form textarea:focus {
+  box-shadow: none;
+}
+.section-form .contact-form button {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  background-color: #ffcc00;
+  color: #662e0a;
+  padding: 10px 16px;
+}
+.section-form .contact-form button:active {
+  border-radius: 0;
+  border: none;
+  background-color: #ffcc00 !important;
+  color: #662e0a !important;
+}
+.section-form .contact-info {
+  text-align: center;
+  margin-top: 30px;
+}
+.section-form .contact-info .display-1 {
+  opacity: 0.1;
+}
+.section-form .contact-info a {
+  color: #212529;
+}
+
+/* ---------- Section Gallery ---------- */
+.section-gallery {
+  margin-top: 60px;
+}
+.section-gallery .card-body {
+  text-align: center;
+  font-weight: 300;
+}
+.section-gallery .card-body .card-title {
+  font-weight: 300;
+}/*# sourceMappingURL=main.css.map */

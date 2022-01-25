@@ -1,0 +1,140 @@
+/* ---------- Section Map ---------- */
+
+.section-map {
+    color: $text-black;
+    text-align: justify;
+    font-size: 16px;
+    margin: 30px 0;
+
+    .contact-title {
+        span {
+            display: flex;
+            align-items: flex-start;
+            text-align: left;
+            font-size: 50px;
+            color: $brown;
+            font-weight: 300;
+
+            &:after {
+                content: "";
+                flex-grow: 1;
+                height: 1px;
+                background: $yellow;
+                margin: auto 0 auto 20px;
+            }
+        }
+    }
+
+    .map {
+        filter: grayscale(100%);
+    }
+}
+
+/* ---------- Section Form ---------- */
+
+.section-form {
+    .text-block {
+        position: relative;
+
+        h2 {
+            text-align: center;
+        }
+
+        ol {
+            position: absolute;
+            left: 10%;
+        }
+    }
+
+    .contact-form {
+        margin-top: 120px;
+
+        label:not(.form-check-label) {
+            opacity: 0.75;
+        }
+
+        input:not(input[type="checkbox"]) {
+            border: none;
+            border-bottom: 1px solid $text-black;
+            border-radius: 0;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        input[type="checkbox"] {
+            border: 1px solid $brown;
+            border-radius: 0;
+            box-shadow: none;
+
+            &::after {
+                content: "Consent";
+                position: relative;
+                top: -35px;
+            }
+
+            &:checked {
+                background-color: $yellow;
+                color: $brown;
+                border: 1px solid $brown;
+                border-radius: 0;
+            }
+        }
+
+        textarea {
+            border: none;
+            border-radius: 0;
+            resize: none;
+            background-attachment: local;
+            background-image: linear-gradient(
+                    to right,
+                    white 10px,
+                    transparent 10px
+                ),
+                linear-gradient(to left, white 10px, transparent 10px),
+                repeating-linear-gradient(
+                    white,
+                    white 30px,
+                    $text-black 30px,
+                    $text-black 31px,
+                    white 31px
+                );
+            line-height: 31px;
+            padding: 8px 10px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        button {
+            width: 100%;
+            border-radius: 0;
+            border: none;
+            background-color: $yellow;
+            color: $brown;
+            padding: 10px 16px;
+
+            &:active {
+                border-radius: 0;
+                border: none;
+                background-color: $yellow !important;
+                color: $brown !important;
+            }
+        }
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 30px;
+
+        .display-1 {
+            opacity: 0.1;
+        }
+
+        a {
+            color: $text-black;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+/* ---------- Section Gallery ---------- */
+.section-gallery {
+  margin-top: 60px;
+}
+.section-gallery .card-body {
+  text-align: center;
+  font-weight: 300;
+}
+.section-gallery .card-body .card-title {
+  font-weight: 300;
+}/*# sourceMappingURL=gallery.css.map */
