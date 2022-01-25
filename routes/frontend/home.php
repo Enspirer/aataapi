@@ -3,6 +3,10 @@
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\AizUploadController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\AboutUsController;
+use App\Http\Controllers\Frontend\ContactUsController;
+use App\Http\Controllers\Frontend\GalleryController;
+use App\Http\Controllers\Frontend\MediaController;
 use App\Http\Controllers\Frontend\User\AccountController;
 use App\Http\Controllers\Frontend\User\DashboardController;
 use App\Http\Controllers\Frontend\User\ProfileController;
@@ -12,6 +16,10 @@ use App\Http\Controllers\Frontend\User\ProfileController;
  * All route names are prefixed with 'frontend.'.
  */
 Route::get('/', [HomeController::class, 'index'])->name('index');
+Route::get('about-us', [AboutUsController::class, 'index'])->name('about_us');
+Route::get('contact-us', [ContactUsController::class, 'index'])->name('contact_us');
+Route::get('gallery', [GalleryController::class, 'index'])->name('gallery');
+Route::get('media', [MediaController::class, 'index'])->name('media');
 Route::get('contact', [ContactController::class, 'index'])->name('contact');
 Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
 
