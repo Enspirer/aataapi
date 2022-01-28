@@ -11,13 +11,11 @@
 
 @section('content')
 
-@include('frontend.includes.slider')
-
 <section class="section-about">
   <div class="container">
     <div class="row">
       <div class="about-title">
-        <span>About us</span>
+        <h2>About us</h2>
       </div>
     </div>
     <div class="row">
@@ -43,6 +41,8 @@
     </div>
   </div>
 </section>
+
+
 <section class="section-message">
   <div class="container">
     <div class="row">
@@ -97,5 +97,19 @@
       prevEl: '.swiper-button-prev',
     },
   });
+
+  function switcher(x) {
+    if (x.matches) {
+        $(".mobile-bottom").insertAfter(".mobile-top");
+    } else {
+        $(".mobile-top").insertAfter(".mobile-bottom");
+    }
+}
+
+const windowSize = window.matchMedia("(max-width: 960px)");
+
+switcher(windowSize);
+
+windowSize.addListener(switcher);
 </script>
 @endpush

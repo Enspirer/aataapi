@@ -5,6 +5,7 @@
 @push('after-styles')
     <link rel="stylesheet" href="{{ url('css/index.css') }}">
     <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <link rel="stylesheet" href="{{ url('achi/css/main.css') }}" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -14,54 +15,34 @@
 
 @section('content')
 
-<section id="home-banner">
-      <!-- Swiper -->
-      <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="{{ url('img/frontend/home/Hero.png') }}" alt="first-banner">
-                    <div class="banner-txt-wrapper">
-                    <h1>AATAAPI</h1>
-                    <h4 class="title-description" style="font-weight:300;">Center for Mindfulness & Relaxation</h4>
-                    </div>
-                    <div class="logo-wrapper">
-                        <img class="logo" src="{{ url('img/frontend/logo.png') }}" alt="logo">
-                    </div>
-                </div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
-                <div class="swiper-slide">Slide 4</div>
-                <div class="swiper-slide">Slide 5</div>
-                <div class="swiper-slide">Slide 6</div>
-                <div class="swiper-slide">Slide 7</div>
-                <div class="swiper-slide">Slide 8</div>
-                <div class="swiper-slide">Slide 9</div>
-                </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    <!-- <div class="banner-txt-wrapper">
-        <h1>AATAAPI</h1>
-        <h4 style="font-weight:300;">Center for Mindfulness & Relaxation</h4>
-    </div>
-    <div class="logo-wrapper">
-        <img class="logo" src="{{ url('img/frontend/logo.png') }}" alt="logo">
-    </div> -->
-</section>
-</div> 
-<!-- end of container fluid -->
-
 <div class="container-fluid below-banner-all full-width-container-fluid">
-<a class="donate-link" href="#" data-toggle="modal" data-target="#donate">
-    <img class="sonar-wave" width="80px" src="{{ url('img/frontend/donate-logo.png') }}" alt="donate logo">
-    <div style="width:80px; height:80px; background:#FFCC00;border-radius:50%; position: absolute; top: 30px; right: 30px;z-index:-1" class="round-shape"></div>
-</a>
+  <a class="donate-link" href="#" data-toggle="modal" data-target="#donate">
+    <img
+      class="sonar-wave"
+      width="80px"
+      src="{{ url('img/frontend/donate-logo.png') }}"
+      alt="donate logo"
+    />
+    <div
+      style="
+        width: 80px;
+        height: 80px;
+        background: #ffcc00;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        z-index: -1;
+      "
+      class="round-shape"
+    ></div>
+  </a>
+</div>
 
 
-
-<section class="below-banner-section">
+<!-- <section class="below-banner-section">
     <div class="container">
-        <!-- desktop design -->
+        <-- desktop design 
         <div class="inner-container-home-first hidden-xs">
             <img class="home-first-img col-xs-12" src="{{ url('img/frontend/home/home-first.png') }}" alt=""> 
             <div class="home-first-card col-xs-12">
@@ -75,7 +56,7 @@
             </div>
         </div>
 
-        <!-- mobile design -->
+        <-- mobile design 
         <div class="inner-container-home-first visible-xs">
             <img class="home-first-img col-xs-12" src="{{ url('img/frontend/home/home-first.png') }}" alt="">
             <div class="home-mobile-first-card col-xs-12">
@@ -88,15 +69,39 @@
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
             </div>
         </div>
-
-
-
     </div>
- 
-     
+</section> -->
 
 
+<section class="section-popupImage">
+  <div class="container">
+    <img
+      src="{{ url('img/frontend/home/home-first.png') }}"
+      alt="popup-image"
+    />
+    <div class="text-block">
+      <div class="content">
+        <h2>About the <span class="display-4">Center</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
+
+
 <section id="story">
     <div class="container-fluid full-width-container-fluid">
         <div class="container">
@@ -139,7 +144,7 @@
     </div>
 </section>
 <section class="program-slider">
-    <img style="text-align: center;display:block; margin-left:auto;margin-right:auto; width:100%;"
+    <img style="text-align: center;display:block; margin-left:auto;margin-right:auto; width:60%;"
         src="{{ url('img/frontend/home/topic-here.png') }}">
 </section>
 <section>
@@ -171,10 +176,10 @@
 
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row row-cols-1 row-cols-md-3 g-5">
 
-            <div class="col-md-4 col-xs-12">
-                <div class="card">
+            <div class="col">
+                <div class="card h-100">
                     <img src="{{ url('img/frontend/home/card1.png') }}" alt="event-one" style="width:100%">
                     <div class="container">
                         <h3>SAMPLE TITLE HERE</h3>
@@ -186,8 +191,8 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-xs-12">
-                <div class="card">
+            <div class="col">
+                <div class="card h-100">
                     <img src="{{ url('img/frontend/home/card2.png') }}" alt="event-two" style="width:100%">
                     <div class="container">
                         <h3>SAMPLE TITLE HERE</h3>
@@ -199,7 +204,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 col-xs-12">
+            <div class="col">
                 <div class="card">
                     <img src="{{ url('img/frontend/home/card3.png') }}" alt="event-three" style="width:100%">
                     <div class="container">

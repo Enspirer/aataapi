@@ -11,8 +11,6 @@
 
 @section('content')
 
-@include('frontend.includes.slider')
-
 <section class="section-map">
   <div class="container">
     <div class="row">
@@ -59,7 +57,7 @@
           </div>
           <div class="col-md-6">
             <label for="inputPhone" class="form-label">Your Number</label>
-            <input type="number" class="form-control" id="inputPhone" />
+            <input type="tel" class="form-control" id="inputPhone" />
           </div>
           <div class="col-md-6">
             <label for="inputMessage" class="form-label">Message</label>

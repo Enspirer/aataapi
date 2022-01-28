@@ -3,29 +3,17 @@
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="{{ url('img/frontend/home/Hero.png') }}" alt="first-banner" />
-        <div class="banner-txt-wrapper">
-          <h1>AATAAPI</h1>
-          <h4 class="title-description" style="font-weight: 300">
-            Center for Mindfulness & Relaxation
-          </h4>
-        </div>
-        <div class="logo-wrapper">
-          <img
-            class="logo"
-            src="{{ url('img/frontend/logo.png') }}"
-            alt="logo"
-          />
-        </div>
+        <img src="{{ url('achi/images/Slide-1.png') }}" alt="first-banner"/>
       </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">
+      <img src="{{ url('achi/images/Slide-2.png') }}" alt="second-banner"/>
+      </div>
+      <div class="swiper-slide">
+      <img src="{{ url('achi/images/Slide-3.png') }}" alt="third-banner"/>
+      </div>
+      <div class="swiper-slide">
+      <img src="{{ url('achi/images/Slide-4.png') }}" alt="fourth-banner"/>
+      </div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
