@@ -116,7 +116,8 @@
             color: $brown;
             padding: 10px 16px;
 
-            &:active {
+            &:active,
+            &:focus {
                 border-radius: 0;
                 border: none;
                 background-color: $yellow !important;

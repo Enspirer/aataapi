@@ -12,17 +12,16 @@
   color: #212529;
   text-align: justify;
   font-size: 16px;
-  margin: 30px 0;
+  margin: 3rem 0;
 }
-.section-about .about-title span {
+.section-about .about-title h2 {
   display: flex;
   align-items: flex-start;
   text-align: left;
-  font-size: 50px;
   color: #662e0a;
   font-weight: 300;
 }
-.section-about .about-title span:after {
+.section-about .about-title h2:after {
   content: "";
   flex-grow: 1;
   height: 1px;
@@ -144,7 +143,7 @@
   color: #662e0a;
   padding: 10px 16px;
 }
-.section-form .contact-form button:active {
+.section-form .contact-form button:active, .section-form .contact-form button:focus {
   border-radius: 0;
   border: none;
   background-color: #ffcc00 !important;
@@ -171,4 +170,680 @@
 }
 .section-gallery .card-body .card-title {
   font-weight: 300;
+}
+
+/* ---------- Section Media ---------- */
+.section-latest {
+  margin-bottom: 60px;
+}
+.section-latest .section-title {
+  text-align: center;
+  margin: 45px 0;
+}
+.section-latest .section-title .highlighted-title {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.section-cards {
+  margin-bottom: 60px;
+}
+.section-cards .card .card-body .card-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+.section-cards .card .card-body .card-date {
+  display: block;
+  color: #662e0a;
+  margin-bottom: 15px;
+}
+
+/* ---------- Section About ---------- */
+.below-banner-section {
+  margin-top: 5em;
+}
+
+/* ---------- Section Location ---------- */
+.section-location {
+  position: relative;
+  margin-bottom: 11em;
+}
+.section-location img {
+  width: 90%;
+  margin-right: auto;
+}
+.section-location .text-block {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  left: 50%;
+  top: 10%;
+  background-color: #fef8df;
+  color: #662e0a;
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-location .text-block .content {
+  width: 70%;
+  margin: 0 auto;
+}
+.section-location .text-block .content .button {
+  margin-top: 4em;
+}
+.section-location .text-block .content .button a {
+  color: #662e0a;
+  background-color: #ffcc00;
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-location {
+    margin-bottom: 4em;
+  }
+  .section-location img {
+    width: 100%;
+  }
+  .section-location .text-block {
+    position: unset;
+    width: 100%;
+  }
+}
+/* ---------- Section Slider ---------- */
+.section-slider {
+  /* Custom Arrow */
+}
+.section-slider img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  margin: 0;
+}
+.section-slider .prev,
+.section-slider .next {
+  color: #662e0a;
+  position: absolute;
+  top: 38%;
+}
+.section-slider .prev:hover,
+.section-slider .next:hover {
+  cursor: pointer;
+}
+.section-slider .prev i,
+.section-slider .next i {
+  font-size: 2.8rem;
+}
+.section-slider .prev {
+  left: -3em;
+}
+.section-slider .next {
+  right: -3em;
+}
+@media screen and (max-width: 800px) {
+  .section-slider .next,
+.section-slider .prev {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-location .text-block .content {
+    width: 90%;
+  }
+}
+/* ---------- Section Popup Image ---------- */
+.section-popupImage {
+  position: relative;
+  margin: 3rem 0 6rem 0;
+  display: block;
+}
+.section-popupImage img {
+  width: 50%;
+}
+.section-popupImage .text-block {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+  padding: 4em 0;
+  background-color: #fef8df;
+  color: #662e0a;
+  z-index: -1;
+}
+.section-popupImage .text-block h2 span {
+  display: block;
+}
+.section-popupImage .text-block .content {
+  width: 40%;
+  margin: 0px 9% 0 auto;
+}
+.section-popupImage .text-block.height-auto {
+  height: auto;
+}
+.section-popupImage .text-block.height-auto .content-block2 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-popupImage {
+    margin-bottom: 4em;
+  }
+  .section-popupImage img {
+    width: 100%;
+  }
+  .section-popupImage .text-block {
+    position: unset;
+    width: 100%;
+  }
+  .section-popupImage .text-block .content,
+.section-popupImage .text-block .content-block2 {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .section-popupImage .text-block .content h2,
+.section-popupImage .text-block .content-block2 h2 {
+    text-align: center;
+  }
+}
+/* ---------- Section Guided Meditation ---------- */
+.section-guidedMeditation h2 {
+  text-align: center;
+}
+.section-guidedMeditation .card-body .card-title {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+.section-guidedMeditation .card-body .card-date {
+  display: block;
+  color: #662e0a;
+  margin-bottom: 1em;
+}
+
+/* ---------- Section Sinhala Programme Block ---------- */
+.section-sinhalaProgrammeBlock {
+  margin: 3rem 0 3rem 0;
+}
+.section-sinhalaProgrammeBlock .card {
+  color: #662e0a;
+  box-shadow: none;
+  border: none;
+}
+.section-sinhalaProgrammeBlock .card:hover {
+  box-shadow: none;
+}
+.section-sinhalaProgrammeBlock .card .card-body .controller {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.section-sinhalaProgrammeBlock .card .card-body .controller span {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  display: inline-block;
+  border-radius: 50px;
+  border: 1px solid #662e0a;
+  text-align: center;
+}
+.section-sinhalaProgrammeBlock .card .card-body .controller i {
+  color: #662e0a;
+  font-size: 18px;
+}
+.section-sinhalaProgrammeBlock .card .card-body .programme-title {
+  font-family: "FMArjun";
+  margin: 0;
+}
+.section-sinhalaProgrammeBlock .card .card-body .right {
+  float: right;
+  padding-right: 10%;
+}
+.section-sinhalaProgrammeBlock .card .card-body hr {
+  color: #662e0a;
+  height: 2px !important;
+  margin: 0.5rem 0 1rem 0;
+}
+.section-sinhalaProgrammeBlock .card .card-body .description {
+  font-family: "FMArjun";
+  font-size: 20px;
+  line-height: 1.2;
+}
+.section-sinhalaProgrammeBlock .card .card-body .button-block {
+  margin: 2.5rem 0 1.5rem 0;
+}
+.section-sinhalaProgrammeBlock .card .card-body .button-block a {
+  color: #662e0a;
+  padding: 8px 16px;
+  border-radius: 50px;
+  margin-right: 0.5rem;
+}
+.section-sinhalaProgrammeBlock .card .card-body .button-block .more-info {
+  background-color: #ffcc00;
+}
+.section-sinhalaProgrammeBlock .card .card-body .button-block .register {
+  background-color: transparent;
+  border: 1px solid #662e0a;
+}
+
+/* ---------- Section Programmes ---------- */
+.section-programmes .test {
+  font-family: FMArjun;
+  font-size: 50px;
+}
+.section-programmes h2 {
+  text-align: center;
+  font-weight: 400;
+}
+.section-programmes h2 .tiny {
+  font-size: 25px;
+}
+.section-programmes .pill-button {
+  text-align: left;
+  color: #662e0a;
+  background-color: transparent;
+  padding: 8px 32px 8px 0;
+  margin: 0;
+  margin-right: 20px;
+  border: 0;
+  border-radius: 0;
+}
+.section-programmes .pill-button.active {
+  color: #662e0a;
+  background-color: transparent;
+  margin: 0;
+  margin-right: 20px;
+  border-bottom: 1px solid #662e0a;
+}
+.section-programmes .pill-content .card-body .card-title {
+  font-weight: 300;
+}
+.section-programmes .pill-content .card-body .card-date {
+  display: block;
+  margin-bottom: 16px;
+}
+.section-programmes .pill-content .card-body a {
+  color: #662e0a;
+  background-color: #ffcc00;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: none;
+}
+
+/* ---------- Section Image Block ---------- */
+.section-imageBlock {
+  margin: 3rem 0 3rem 0;
+}
+.section-imageBlock .programme-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-imageBlock .programme-details {
+  width: 90%;
+  margin-left: auto;
+}
+.section-imageBlock .programme-details .card .card-body {
+  text-align: center;
+}
+.section-imageBlock .programme-details .card .card-body i {
+  display: block;
+  text-align: right;
+  font-size: 26px;
+  line-height: 0;
+  color: gray;
+}
+.section-imageBlock .programme-details .card .card-body .programme-label {
+  font-size: 14px;
+}
+.section-imageBlock .programme-details .card .card-body .programme-data {
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+.section-imageBlock .programme-details .card .card-body .programme-status-open {
+  display: block;
+  padding: 8px 16px;
+  background-color: #ffcc00;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto 15px;
+}
+.section-imageBlock .programme-details .card .card-body .programme-status-close {
+  padding: 8px 16px;
+  background-color: lightgray;
+  border-radius: 5px;
+  width: 250px;
+  margin: 0 auto 15px;
+}
+.section-imageBlock .programme-details .card .card-footer {
+  padding: 0;
+  border: none;
+}
+.section-imageBlock .programme-details .card .card-footer .btn-register {
+  width: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-weight: 300;
+  background-color: #662e0a;
+  border: none;
+  padding: 8px 16px;
+}
+.section-imageBlock .programme-details .card .card-footer .btn-register:focus {
+  font-weight: 300;
+  background-color: #662e0a;
+  border: none;
+  box-shadow: none;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog {
+  top: 25%;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog .registration-modal-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10%;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog .registration-modal-content div {
+  width: 200px;
+  height: 200px;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog .registration-modal-content .form-download {
+  background-color: #ffcc00;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog .registration-modal-content .form-download span {
+  display: block;
+  color: #662e0a;
+  text-align: center;
+  font-weight: 500;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog .registration-modal-content .form-download span i {
+  font-size: 100px;
+  color: #662e0a;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog .registration-modal-content .online-registration {
+  background-color: transparent;
+  border: 2px solid #ffcc00;
+  text-align: center;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog .registration-modal-content .online-registration img {
+  width: 100px;
+  margin: 20px 0 25px 0;
+}
+.section-imageBlock .programme-details .card .card-footer .registraion-modal .modal-dialog .registration-modal-content .online-registration span {
+  display: block;
+  color: #ffcc00;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ---------- Section Programme Description ---------- */
+.section-programme-description {
+  margin: 3rem 0 3rem 0;
+}
+
+/* ---------- Section Programme Schedule ---------- */
+.section-programmeSchedule {
+  margin: 3rem 0 3rem 0;
+}
+.section-programmeSchedule .shedule-content {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 1px 1px 4px lightgray;
+}
+.section-programmeSchedule .shedule-content h2 {
+  color: #212529;
+}
+.section-programmeSchedule .shedule-content .border-right {
+  border-right: 1px solid #212529;
+}
+.section-programmeSchedule .shedule-content .programmeTable {
+  width: 100%;
+}
+.section-programmeSchedule .shedule-content .programmeTable .table-title {
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.section-programmeSchedule .shedule-content .programmeTable td:nth-child(1) {
+  width: 25%;
+}
+
+/* ---------- Section Donations ---------- */
+.section-donation .donation-content {
+  background-color: #ffcc00;
+  padding: 40px 0;
+  text-align: center;
+}
+.section-donation .donation-content h2 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 400;
+}
+.section-donation .donation-content .content :not(.accNo) {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+}
+.section-donation .donation-content .content .info.accNo {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: #662e0a;
+  padding: 8px 24px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 3px;
+  color: #fff;
+}
+.section-donation .donation-content .content .info {
+  margin-bottom: 30px !important;
+}
+.section-donation .donation-content .content .title {
+  margin-bottom: 8px;
+}
+.section-donation .donation-content .content .light-text {
+  margin-bottom: 8px;
+  font-weight: 300 !important;
+}
+
+/* ---------- Section Registration Form ---------- */
+.section-registrationForm {
+  margin: 3rem 0;
+}
+.section-registrationForm .pill-button {
+  text-align: left;
+  color: #662e0a;
+  background-color: transparent;
+  padding: 8px 32px 8px 0;
+  margin: 0;
+  margin-right: 20px;
+  border: 0;
+  border-radius: 0;
+}
+.section-registrationForm .pill-button.active {
+  color: #662e0a;
+  background-color: transparent;
+  margin: 0;
+  margin-right: 20px;
+  border-bottom: 1px solid #662e0a;
+}
+.section-registrationForm .pill-content {
+  /* Chrome, Safari, Edge, Opera */
+  /* Firefox */
+}
+.section-registrationForm .pill-content h2 {
+  margin: 30px 0;
+}
+.section-registrationForm .pill-content .subtitile {
+  font-weight: 500;
+  font-size: 20px;
+}
+.section-registrationForm .pill-content .form-label,
+.section-registrationForm .pill-content .custom-label,
+.section-registrationForm .pill-content .form-check-label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+.section-registrationForm .pill-content .custom-label {
+  display: block;
+}
+.section-registrationForm .pill-content input[type=radio] {
+  border: 1px solid #662e0a;
+  border-radius: 0;
+  box-shadow: none;
+}
+.section-registrationForm .pill-content input[type=radio]:checked {
+  background-color: #ffcc00;
+  color: #662e0a;
+  border: 1px solid #662e0a;
+  border-radius: 0;
+}
+.section-registrationForm .pill-content input:not(input[type=radio]),
+.section-registrationForm .pill-content select.form-select {
+  border: none;
+  border-bottom: 1px solid #212529;
+  border-radius: 0;
+}
+.section-registrationForm .pill-content input:not(input[type=radio]):focus,
+.section-registrationForm .pill-content select.form-select:focus {
+  box-shadow: none;
+}
+.section-registrationForm .pill-content select.form-select {
+  line-height: 1.7;
+}
+.section-registrationForm .pill-content textarea {
+  border: none;
+  border-radius: 0;
+  resize: none;
+  background-attachment: local;
+  background-image: linear-gradient(to right, white 10px, transparent 10px), linear-gradient(to left, white 10px, transparent 10px), repeating-linear-gradient(white, white 30px, #212529 30px, #212529 31px, white 31px);
+  line-height: 31px;
+  padding: 8px 10px;
+}
+.section-registrationForm .pill-content textarea:focus {
+  box-shadow: none;
+}
+.section-registrationForm .pill-content input::-webkit-outer-spin-button,
+.section-registrationForm .pill-content input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.section-registrationForm .pill-content input[type=number] {
+  -moz-appearance: textfield;
+}
+.section-registrationForm .pill-content p.registration-agreement {
+  margin: 1.5rem 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+.section-registrationForm .pill-content button {
+  width: 100%;
+  border-radius: 0;
+  border: none;
+  background-color: #ffcc00;
+  color: #662e0a;
+  padding: 10px 16px;
+}
+.section-registrationForm .pill-content button:active, .section-registrationForm .pill-content button:focus {
+  border-radius: 0;
+  border: none;
+  background-color: #ffcc00 !important;
+  color: #662e0a !important;
+}
+.section-registrationForm .pill-content img.registration-image {
+  width: 100%;
+  height: 100%;
+}
+.section-registrationForm #sinhala-lang.pill-content .form-label,
+.section-registrationForm #sinhala-lang.pill-content .custom-label,
+.section-registrationForm #sinhala-lang.pill-content .form-check-label {
+  font-size: 16px;
+}
+.section-registrationForm #sinhala-lang.pill-content .registration-agreement {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+  .section-donation .donation-content {
+    padding: 40px !important;
+  }
+  .section-donation .donation-content .mobile-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-programmes .pill-button {
+    margin-right: 0;
+  }
+  .section-programmes .pill-button.active {
+    margin-right: 0;
+  }
+
+  .section-imageBlock .programme-details {
+    width: 100%;
+    margin: 0;
+  }
+  .section-imageBlock .programme-details .card {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .section-programmeSchedule .border-right {
+    border: none !important;
+  }
+  .section-programmeSchedule .mobile-hide {
+    display: none;
+  }
+
+  .section-registrationForm .pill-button {
+    margin-right: 0;
+  }
+  .section-registrationForm .pill-button.active {
+    margin-right: 0;
+  }
+  .section-registrationForm .pill-content .registration-image {
+    display: none;
+  }
+}
+.section-meditationMethod {
+  margin: 14rem 0 4rem 0;
+}
+.section-meditationMethod .wrapper {
+  background-color: #fef8df;
+  padding: 60px;
+}
+.section-meditationMethod .wrapper .image-block img {
+  position: absolute;
+  width: 500px;
+  bottom: 12%;
+  right: 12%;
+}
+.section-meditationMethod .wrapper .text-block .sinhala-title {
+  font-family: "FMArjun";
+  font-weight: 700;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 960px) {
+  .section-meditationMethod .wrapper .image-block img {
+    width: 100%;
+    position: unset;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-meditationMethod .wrapper {
+    padding: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

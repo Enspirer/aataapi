@@ -1,0 +1,33 @@
+/* ---------- Section Media ---------- */
+.section-latest {
+    margin-bottom: 60px;
+
+    .section-title {
+        text-align: center;
+        margin: 45px 0;
+
+        .highlighted-title {
+            font-weight: 400;
+            font-size: 40px;
+        }
+    }
+}
+
+.section-cards {
+    margin-bottom: 60px;
+
+    .card {
+        .card-body {
+            .card-title {
+                text-transform: uppercase;
+                font-weight: 300;
+                margin-bottom: 0;
+            }
+            .card-date {
+                display: block;
+                color: $brown;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

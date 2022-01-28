@@ -17,3 +17,54 @@ $black: #000;
 @import "../css/aboutUs.scss";
 @import "../css/contactUs.scss";
 @import "../css/gallery.scss";
+@import "../css/media.scss";
+@import "../css/center.scss";
+@import "../css/meditation.scss";
+@import "../css/programme.scss";
+
+.section-meditationMethod {
+    margin: 14rem 0 4rem 0;
+
+    .wrapper {
+        background-color: #fef8df;
+        padding: 60px;
+
+        .image-block {
+            img {
+                position: absolute;
+                width: 500px;
+                bottom: 12%;
+                right: 12%;
+            }
+        }
+
+        .text-block {
+            .sinhala-title {
+                font-family: "FMArjun";
+                font-weight: 700;
+                font-size: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .section-meditationMethod {
+        .wrapper {
+            .image-block {
+                img {
+                    width: 100%;
+                    position: unset;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-meditationMethod {
+        .wrapper {
+            padding: 30px;
+        }
+    }
+}

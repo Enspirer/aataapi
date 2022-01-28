@@ -1,0 +1,568 @@
+/* ---------- Section Sinhala Programme Block ---------- */
+
+.section-sinhalaProgrammeBlock {
+    margin: 3rem 0 3rem 0;
+
+    .card {
+        color: $brown;
+        box-shadow: none;
+        border: none;
+
+        &:hover {
+            box-shadow: none;
+        }
+
+        .card-body {
+            .controller {
+                display: flex;
+                justify-content: flex-end;
+                gap: 0.5rem;
+
+                span {
+                    width: 30px;
+                    height: 30px;
+                    background-color: transparent;
+                    display: inline-block;
+                    border-radius: 50px;
+                    border: 1px solid $brown;
+                    text-align: center;
+                }
+
+                i {
+                    color: $brown;
+                    font-size: 18px;
+                }
+            }
+            .programme-title {
+                font-family: "FMArjun";
+                margin: 0;
+            }
+
+            .right {
+                float: right;
+                padding-right: 10%;
+            }
+
+            hr {
+                color: $brown;
+                height: 2px !important;
+                margin: 0.5rem 0 1rem 0;
+            }
+
+            .description {
+                font-family: "FMArjun";
+                font-size: 20px;
+                line-height: 1.2;
+            }
+
+            .button-block {
+                margin: 2.5rem 0 1.5rem 0;
+                a {
+                    color: $brown;
+                    padding: 8px 16px;
+                    border-radius: 50px;
+                    margin-right: 0.5rem;
+                }
+
+                .more-info {
+                    background-color: $yellow;
+                }
+
+                .register {
+                    background-color: transparent;
+                    border: 1px solid $brown;
+                }
+            }
+        }
+    }
+}
+/* ---------- Section Programmes ---------- */
+.section-programmes {
+    .test {
+        font-family: FMArjun;
+        font-size: 50px;
+    }
+    h2 {
+        text-align: center;
+        font-weight: 400;
+
+        .tiny {
+            font-size: 25px;
+        }
+    }
+
+    .pill-button {
+        text-align: left;
+        color: $brown;
+        background-color: transparent;
+        padding: 8px 32px 8px 0;
+        margin: 0;
+        margin-right: 20px;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .pill-button.active {
+        color: $brown;
+        background-color: transparent;
+        margin: 0;
+        margin-right: 20px;
+        border-bottom: 1px solid $brown;
+    }
+
+    .pill-content {
+        .card-body {
+            .card-title {
+                font-weight: 300;
+            }
+
+            .card-date {
+                display: block;
+                margin-bottom: 16px;
+            }
+
+            a {
+                color: $brown;
+                background-color: $yellow;
+                padding: 8px 16px;
+                border-radius: 50px;
+                border: none;
+            }
+        }
+    }
+}
+
+/* ---------- Section Image Block ---------- */
+.section-imageBlock {
+    margin: 3rem 0 3rem 0;
+
+    .programme-image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .programme-details {
+        width: 90%;
+        margin-left: auto;
+
+        .card {
+            .card-body {
+                text-align: center;
+
+                i {
+                    display: block;
+                    text-align: right;
+                    font-size: 26px;
+                    line-height: 0;
+                    color: gray;
+                }
+
+                .programme-label {
+                    font-size: 14px;
+                }
+
+                .programme-data {
+                    font-weight: 500;
+                    margin: 0 0 15px 0;
+                }
+
+                .programme-status-open {
+                    display: block;
+                    padding: 8px 16px;
+                    background-color: $yellow;
+                    border-radius: 5px;
+                    width: 80%;
+                    margin: 0 auto 15px;
+                }
+
+                .programme-status-close {
+                    padding: 8px 16px;
+                    background-color: lightgray;
+                    border-radius: 5px;
+                    width: 250px;
+                    margin: 0 auto 15px;
+                }
+            }
+
+            .card-footer {
+                padding: 0;
+                border: none;
+
+                .btn-register {
+                    width: 100%;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    font-weight: 300;
+                    background-color: $brown;
+                    border: none;
+                    padding: 8px 16px;
+
+                    &:focus {
+                        font-weight: 300;
+                        background-color: $brown;
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+
+                .registraion-modal {
+                    .modal-dialog {
+                        top: 25%;
+
+                        .registration-modal-content {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: row;
+                            gap: 10%;
+
+                            div {
+                                width: 200px;
+                                height: 200px;
+                            }
+
+                            .form-download {
+                                background-color: $yellow;
+
+                                span {
+                                    display: block;
+                                    color: $brown;
+                                    text-align: center;
+                                    font-weight: 500;
+
+                                    i {
+                                        font-size: 100px;
+                                        color: $brown;
+                                    }
+                                }
+                            }
+
+                            .online-registration {
+                                background-color: transparent;
+                                border: 2px solid $yellow;
+                                text-align: center;
+
+                                img {
+                                    width: 100px;
+                                    margin: 20px 0 25px 0;
+                                }
+
+                                span {
+                                    display: block;
+                                    color: $yellow;
+                                    text-align: center;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ---------- Section Programme Description ---------- */
+
+.section-programme-description {
+    margin: 3rem 0 3rem 0;
+}
+
+/* ---------- Section Programme Schedule ---------- */
+
+.section-programmeSchedule {
+    margin: 3rem 0 3rem 0;
+
+    .shedule-content {
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+        border-radius: 5px;
+        padding: 20px;
+        box-shadow: 1px 1px 4px lightgray;
+
+        h2 {
+            color: $text-black;
+        }
+
+        .border-right {
+            border-right: 1px solid $text-black;
+        }
+
+        .programmeTable {
+            width: 100%;
+
+            .table-title {
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+
+            td:nth-child(1) {
+                width: 25%;
+            }
+        }
+    }
+}
+
+/* ---------- Section Donations ---------- */
+
+.section-donation {
+    .donation-content {
+        background-color: $yellow;
+        padding: 40px 0;
+        text-align: center;
+
+        h2 {
+            font-size: 24px;
+            text-align: center;
+            font-weight: 400;
+        }
+
+        .content {
+            :not(.accNo) {
+                display: block;
+                text-align: center;
+                font-weight: 500;
+            }
+
+            .info.accNo {
+                display: inline-block;
+                margin: 0 auto;
+                background-color: $brown;
+                padding: 8px 24px;
+                font-weight: 700;
+                font-size: 24px;
+                letter-spacing: 3px;
+                color: $white;
+            }
+
+            .info {
+                margin-bottom: 30px !important;
+            }
+
+            .title {
+                margin-bottom: 8px;
+            }
+
+            .light-text {
+                margin-bottom: 8px;
+                font-weight: 300 !important;
+            }
+        }
+    }
+}
+
+/* ---------- Section Registration Form ---------- */
+
+.section-registrationForm {
+    margin: 3rem 0;
+
+    .pill-button {
+        text-align: left;
+        color: $brown;
+        background-color: transparent;
+        padding: 8px 32px 8px 0;
+        margin: 0;
+        margin-right: 20px;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .pill-button.active {
+        color: $brown;
+        background-color: transparent;
+        margin: 0;
+        margin-right: 20px;
+        border-bottom: 1px solid $brown;
+    }
+
+    .pill-content {
+        h2 {
+            margin: 30px 0;
+        }
+
+        .subtitile {
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .form-label,
+        .custom-label,
+        .form-check-label {
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 0.5rem;
+        }
+
+        .custom-label {
+            display: block;
+        }
+
+        input[type="radio"] {
+            border: 1px solid $brown;
+            border-radius: 0;
+            box-shadow: none;
+
+            &:checked {
+                background-color: $yellow;
+                color: $brown;
+                border: 1px solid $brown;
+                border-radius: 0;
+            }
+        }
+
+        input:not(input[type="radio"]),
+        select.form-select {
+            border: none;
+            border-bottom: 1px solid $text-black;
+            border-radius: 0;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        select.form-select {
+            line-height: 1.7;
+        }
+
+        textarea {
+            border: none;
+            border-radius: 0;
+            resize: none;
+            background-attachment: local;
+            background-image: linear-gradient(
+                    to right,
+                    white 10px,
+                    transparent 10px
+                ),
+                linear-gradient(to left, white 10px, transparent 10px),
+                repeating-linear-gradient(
+                    white,
+                    white 30px,
+                    $text-black 30px,
+                    $text-black 31px,
+                    white 31px
+                );
+            line-height: 31px;
+            padding: 8px 10px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+
+        p.registration-agreement {
+            margin: 1.5rem 0;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        button {
+            width: 100%;
+            border-radius: 0;
+            border: none;
+            background-color: $yellow;
+            color: $brown;
+            padding: 10px 16px;
+
+            &:active,
+            &:focus {
+                border-radius: 0;
+                border: none;
+                background-color: $yellow !important;
+                color: $brown !important;
+            }
+        }
+
+        img.registration-image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #sinhala-lang.pill-content {
+        .form-label,
+        .custom-label,
+        .form-check-label {
+            font-size: 16px;
+        }
+
+        .registration-agreement {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-donation {
+        .donation-content {
+            padding: 40px !important;
+            .mobile-hide {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-programmes {
+        .pill-button {
+            margin-right: 0;
+        }
+
+        .pill-button.active {
+            margin-right: 0;
+        }
+    }
+    .section-imageBlock {
+        .programme-details {
+            width: 100%;
+            margin: 0;
+
+            .card {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+            }
+        }
+    }
+
+    .section-programmeSchedule {
+        .border-right {
+            border: none !important;
+        }
+
+        .mobile-hide {
+            display: none;
+        }
+    }
+
+    .section-registrationForm {
+        .pill-button {
+            margin-right: 0;
+        }
+
+        .pill-button.active {
+            margin-right: 0;
+        }
+        .pill-content {
+            .registration-image {
+                display: none;
+            }
+        }
+    }
+}

@@ -4,14 +4,13 @@
     color: $text-black;
     text-align: justify;
     font-size: 16px;
-    margin: 30px 0;
+    margin: 3rem 0;
 
     .about-title {
-        span {
+        h2 {
             display: flex;
             align-items: flex-start;
             text-align: left;
-            font-size: 50px;
             color: $brown;
             font-weight: 300;
 
